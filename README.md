@@ -7,7 +7,13 @@
 ## Installation
 
 ```
-composer require --dev aonach/module-disabletwofactorauth
-bin/magento module:enable Aonach_DisableTwoFactorAuth
-bin/magento setup:upgrade
+Add the repository in composer.json
+"aonach/module-disabletwofactorauth": {
+   "type": "vcs",
+   "url": "https://github.com/aonach/Aonach_DisableTwoFactorAuth"
+}
+
+Run composer require --dev aonach/module-disabletwofactorauth
+
+Run bin/magento setup:upgrade
 ```
