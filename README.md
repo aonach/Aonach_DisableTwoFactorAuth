@@ -7,11 +7,7 @@
 ## Installation
 
 ```
-Add the repository in composer.json
-"aonach/module-disabletwofactorauth": {
-   "type": "vcs",
-   "url": "https://github.com/aonach/Aonach_DisableTwoFactorAuth"
-}
+Run composer config repositories.aonach vcs https://github.com/aonach/Aonach_DisableTwoFactorAuth
 
 Run composer require --dev aonach/module-disabletwofactorauth
 
