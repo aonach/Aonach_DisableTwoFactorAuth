@@ -45,7 +45,7 @@ class BypassTwoFactorAuth
         $is2faEnabled = true;
         $isDeveloperMode = $this->appState->getMode() == State::MODE_DEVELOPER;
         $baseUrl = $this->urlBuilder->getBaseUrl();
-        $isLocal = strpos($baseUrl, '.local') !== false;
+        $isLocal = strpos($baseUrl, '.local') !== false || strpos($baseUrl, 'dev.') !== false;
 
         if ($isDeveloperMode && $isLocal) {
             $is2faEnabled = false;
